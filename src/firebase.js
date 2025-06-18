@@ -18,4 +18,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-export const storage = getStorage(app); 
+export const storage = getStorage(app);
+
+const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
+const CLOUDINARY_CLOUD_NAME = process.env.REACT_APP_CLOUDINARY_CLOUD_NAME;
+const CLOUDINARY_UPLOAD_PRESET = process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET; 
